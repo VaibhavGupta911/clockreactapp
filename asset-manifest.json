@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/clockreactapp/static/css/main.17acf3b6.css",
+    "main.js": "/clockreactapp/static/js/main.6d07d799.js",
+    "static/js/787.32cc21ef.chunk.js": "/clockreactapp/static/js/787.32cc21ef.chunk.js",
+    "index.html": "/clockreactapp/index.html",
+    "main.17acf3b6.css.map": "/clockreactapp/static/css/main.17acf3b6.css.map",
+    "main.6d07d799.js.map": "/clockreactapp/static/js/main.6d07d799.js.map",
+    "787.32cc21ef.chunk.js.map": "/clockreactapp/static/js/787.32cc21ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17acf3b6.css",
+    "static/js/main.6d07d799.js"
+  ]
+}
