@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import React from 'react';
+import { ChakraProvider, useColorMode, Box, VStack } from '@chakra-ui/react';
+import Clock from './Clock';
+import { MoonIcon } from '@chakra-ui/icons';
+export default function App() {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    < ChakraProvider>
+      <div className='moon-div'>
+        <VStack >
+          <MoonIcon
+            onClick={toggleColorMode}
+            boxSize={8}
+          />
+          <Box textTransform='capitalize' >{colorMode} Mode</Box>
+        </VStack>
+      </div>
+      <Clock colorMode={colorMode} />
+    </ChakraProvider>
   );
 }
 
-export default App;
